@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ApexPlanet Web Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>ApexPlanet Web Development Tasks</h1>
+  </header>
+
+  <nav>
+    <a href="#layout">Responsive Layout</a>
+    <a href="#contact">Contact Form</a>
+    <a href="#todo">To-Do List</a>
+  </nav>
+
+  <!-- Responsive Layout -->
+  <section id="layout">
+    <h2>Responsive Layout (Flexbox + Grid)</h2>
+    <p>This layout adapts to various screen sizes using Flexbox and CSS Grid.</p>
+    <div class="grid">
+      <div class="card">Box 1</div>
+      <div class="card">Box 2</div>
+      <div class="card">Box 3</div>
+      <div class="card">Box 4</div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Form with Validation</h2>
+    <div class="form-container">
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" placeholder="Your message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="response"></p>
+    </div>
+  </section>
+
+  <!-- To-Do List -->
+  <section id="todo">
+    <h2>Dynamic To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <button id="addTask">Add Task</button>
+      <ul id="taskList"></ul>
+    </div>
+  </section>
+
+  <footer>© 2025 ApexPlanet Web Tasks</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
